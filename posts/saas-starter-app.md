@@ -1,6 +1,7 @@
 ---
 title: "Building a serverless SaaS product"
 subtitle: "A full-stack SaaS project with authentication and payments."
+socialImage: images/port_6.jpg
 date: "2021-07-12"
 ---
 

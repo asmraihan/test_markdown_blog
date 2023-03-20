@@ -1,6 +1,7 @@
 ---
 title: "Wolfhunter: A PICO-8 RPG"
 subtitle: "Implementing Pokemon-like combat mechanics in PICO-8."
+socialImage: images/port_7.jpg
 date: "2020-12-22"
 ---
 
