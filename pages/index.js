@@ -36,7 +36,7 @@ export default function Home({ posts }) {
         >
           <Link href={`/post/${slug}`}>
             <a className='flex'>
-              <div className='w-1/2 text-3xl'>
+              <div className='w-1/2 text-xl font-semibold'>
               <Image
                 width={650}
                 height={340}
@@ -45,9 +45,9 @@ export default function Home({ posts }) {
               />
               <h1 className='p-4'>{frontmatter.title}</h1>
               </div>
-              <div className='flex flex-col justify-between'>
-              <h1 className='p-4'>{frontmatter.metaDesc}</h1>
-              <h1 className='p-4'>{frontmatter.date}</h1>
+              <div className='flex flex-col justify-between py-10'>
+              <h1 className='p-4 text-lg'>{frontmatter.metaDesc}</h1>
+              <h1 className='p-4'>Date : <span className='text-gray-500'>{frontmatter.date}</span></h1>
               </div>
             </a>
           </Link>
