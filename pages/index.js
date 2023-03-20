@@ -32,10 +32,10 @@ export default function Home({ posts }) {
       {posts?.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className='border border-gray-200 m-2 rounded-md shadow-lg overflow-hidden flex flex-col'
+          className='border border-gray-200 m-2 rounded-md shadow-lg overflow-hidden flex flex-col mb-5'
         >
           <Link href={`/post/${slug}`}>
-            <a className='flex mb-10'>
+            <a className='flex'>
               <div className='w-1/2 text-xl font-semibold'>
               <Image
                 width={650}
