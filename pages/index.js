@@ -38,6 +38,7 @@ export default function Home({ posts }) {
             <a className='flex'>
               <div className='w-1/2 text-xl font-semibold'>
               <Image
+                objectFit="cover"
                 width={650}
                 height={340}
                 alt={frontmatter.title}
