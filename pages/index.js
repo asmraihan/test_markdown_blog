@@ -28,26 +28,27 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     // <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
-    <div className='container w-3/4 mx-auto'>
+    <div className='container lg:w-3/4 mx-auto'>
       {posts?.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className='border border-gray-200 m-2 rounded-md shadow-lg overflow-hidden flex flex-col mb-5'
+          className='border border-gray-200 m-2 rounded-md shadow-lg overflow-hidden mb-5'
         >
           <Link href={`/post/${slug}`}>
-            <a className='flex'>
-              <div className='w-1/2 text-xl font-semibold'>
-              <Image
-                objectFit="cover"
+            <a className='lg:flex'>
+              <div className='lg:w-1/2'>
+              <Image className='object-cover'
+                // objectFit="cover"
                 width={650}
                 height={340}
                 alt={frontmatter.title}
                 src={`/${frontmatter.socialImage}`}
               />
-              <h1 className='p-4'>{frontmatter.title}</h1>
+              
               </div>
-              <div className='flex flex-col justify-between pt-10 '>
-              <h1 className='p-4 text-lg'>{frontmatter.metaDesc}</h1>
+              <div className='flex flex-col justify-between lg:pt-5'>
+              <h1 className='p-4 font-semibold text-xl'>{frontmatter.title}</h1>
+              <h1 className='px-4 lg:p-4 text-lg'>{frontmatter.metaDesc}</h1>
               <h1 className='p-4'>Date : <span className='text-gray-500'>{frontmatter.date}</span></h1>
               </div>
             </a>

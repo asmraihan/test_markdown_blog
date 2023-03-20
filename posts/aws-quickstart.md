@@ -1,5 +1,6 @@
 ---
 title: "Getting Started with AWS"
+metaDesc: '"Cloud computing" plays a vital role in the creation. . .'
 subtitle: "Create an AWS account and set up CLI/SDK access."
 socialImage: images/port_1.jpg
 date: "2020-12-27"
