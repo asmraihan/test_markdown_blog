@@ -28,7 +28,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     // <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
-    <div className='container w-3/4'>
+    <div className='container w-3/4 mx-auto'>
       {posts?.map(({ slug, frontmatter }) => (
         <div
           key={slug}
@@ -36,7 +36,7 @@ export default function Home({ posts }) {
         >
           <Link href={`/post/${slug}`}>
             <a className='flex'>
-              <div>
+              <div className='w-1/2 text-3xl'>
               <Image
                 width={650}
                 height={340}
@@ -45,8 +45,10 @@ export default function Home({ posts }) {
               />
               <h1 className='p-4'>{frontmatter.title}</h1>
               </div>
+              <div className='flex flex-col justify-between'>
               <h1 className='p-4'>{frontmatter.metaDesc}</h1>
               <h1 className='p-4'>{frontmatter.date}</h1>
+              </div>
             </a>
           </Link>
         </div>
