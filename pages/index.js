@@ -45,7 +45,7 @@ export default function Home({ posts }) {
               />
               <h1 className='p-4'>{frontmatter.title}</h1>
               </div>
-              <div className='flex flex-col justify-between py-10'>
+              <div className='flex flex-col justify-between pt-10 '>
               <h1 className='p-4 text-lg'>{frontmatter.metaDesc}</h1>
               <h1 className='p-4'>Date : <span className='text-gray-500'>{frontmatter.date}</span></h1>
               </div>

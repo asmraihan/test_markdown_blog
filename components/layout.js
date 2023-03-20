@@ -5,8 +5,8 @@ export default function Layout({ children }) {
     <div className='flex flex-col min-h-screen'>
       <header className='bg-gray-900 mb-8 py-4'>
         <div className='container mx-auto flex justify-center text-white'>
-          <Link className='ml-20' href='/'>
-            <a>Home</a>
+          <Link href='/'>
+            <a className='mx-10'>Home</a>
           </Link>
           <span className='mx-auto'>Testing Blog</span>{' '}
         </div>
