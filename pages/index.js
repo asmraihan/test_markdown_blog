@@ -35,7 +35,7 @@ export default function Home({ posts }) {
           className='border border-gray-200 m-2 rounded-md shadow-lg overflow-hidden flex flex-col'
         >
           <Link href={`/post/${slug}`}>
-            <a className='flex'>
+            <a className='flex mb-10'>
               <div className='w-1/2 text-xl font-semibold'>
               <Image
                 width={650}
