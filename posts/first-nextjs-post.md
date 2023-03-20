@@ -2,7 +2,7 @@
 title: 'My First NextJS Post'
 metaTitle: 'my first nextjs post'
 metaDesc: 'learn how to setup and building markdown blog with nextjs'
-socialImage: images/24-04-2022.png
+socialImage: images/port_1.jpg
 date: '2022-04-24'
 tags:
   - nextjs
