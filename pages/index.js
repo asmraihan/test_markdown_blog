@@ -24,10 +24,10 @@ export async function getStaticProps() {
     }
   }
 }
-
+// get posts from folder
 export default function Home({ posts }) {
 
-  // sort posts by date
+  // sort posts 
   const sortDate = (posts) => {
     const sortedData = posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
     return sortedData;
@@ -68,7 +68,7 @@ sortDate(posts)
 }
 
 
-// dark mode done
+// dark mode
 
 export async function Toggle(){
    let html = document.getElementById('html')
