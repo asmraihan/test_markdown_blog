@@ -32,6 +32,7 @@ export default function PostPage({ frontmatter, content }) {
     return (
         <div className='prose px-5 lg:px-0 lg:max-w-3xl mx-auto'>
             <h1>{frontmatter.title}</h1>
+            <h4>Date : {frontmatter.date}</h4>
             <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
         </div>
     )

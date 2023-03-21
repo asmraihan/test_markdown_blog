@@ -26,6 +26,14 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+
+  // sort posts by date
+  const sortDate = (posts) => {
+    const sortedData = posts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
+    return sortedData;
+}
+sortDate(posts)
+
   return (
     // <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
     <div className='container lg:w-3/4 mx-auto'>
@@ -35,7 +43,7 @@ export default function Home({ posts }) {
           className='border border-gray-200 m-2 rounded-md shadow-lg overflow-hidden mb-5'
         >
           <Link href={`/post/${slug}`}>
-            <a className='lg:flex'>
+            <a className='lg:flex justify-start'>
               <div className='lg:w-1/2'>
               <Image className='object-cover'
                 // objectFit="cover"
@@ -47,7 +55,7 @@ export default function Home({ posts }) {
               
               </div>
               <div className='flex flex-col justify-between lg:pt-5'>
-              <h1 className='p-4 font-semibold text-xl'>{frontmatter.title}</h1>
+              <h1 className='p-4 font-semibold text-xl text-violet-600'>{frontmatter.title}</h1>
               <h1 className='px-4 lg:p-4 text-lg'>{frontmatter.metaDesc}</h1>
               <h1 className='p-4'>Date : <span className='text-gray-500'>{frontmatter.date}</span></h1>
               </div>

@@ -3,7 +3,7 @@ title: "Using AI to generate poetry"
 metaDesc: 'I decided to test it against poetry and story generation.'
 subtitle: "I used GPT-3 to generate poetry and other creative content."
 socialImage: images/port_3.jpg
-date: "2021-08-27"
+date: "2025-08-27"
 ---
 
 I was recently granted access to the [OpenAI GPT-3 Beta](https://beta.openai.com/), a very powerful language model that can be used to do all sorts of magic like chat bot generation, article summary, and a [lot more cool stuff](https://beta.openai.com/examples).
