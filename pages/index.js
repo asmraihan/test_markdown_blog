@@ -70,11 +70,22 @@ sortDate(posts)
 
 // dark mode
 
+// export async function Toggle(){
+//    let html = document.getElementById('html')
+//    let btn = document.getElementById('btn-theme')
+
+//    btn.addEventListener('click', () => {
+//     html.classList.toggle('dark');
+//   });
+// }
+// Toggle()
+
+// dark v2
 export async function Toggle(){
    let html = document.getElementById('html')
    let btn = document.getElementById('btn-theme')
 
-   btn.addEventListener('click', () => {
+   btn.addEventListener('click', async () => {
     html.classList.toggle('dark');
   });
 }
