@@ -40,7 +40,7 @@ sortDate(posts)
       {posts?.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className='border border-gray-200 m-2 rounded-md shadow-lg overflow-hidden mb-5'
+          className='border border-gray-200 dark:border-gray-800 m-2 rounded-md lg:rounded-sm shadow-lg dark:shadow-none overflow-hidden mb-5'
         >
           <Link href={`/post/${slug}`}>
             <a className='lg:flex justify-start'>
@@ -56,8 +56,8 @@ sortDate(posts)
               </div>
               <div className='flex flex-col justify-between lg:pt-5'>
               <h1 className='p-4 font-semibold text-xl text-violet-600'>{frontmatter.title}</h1>
-              <h1 className='px-4 lg:p-4 text-lg'>{frontmatter.metaDesc}</h1>
-              <h1 className='p-4'>Date : <span className='text-gray-500'>{frontmatter.date}</span></h1>
+              <h1 className='px-4 lg:p-4 text-lg dark:text-white'>{frontmatter.metaDesc}</h1>
+              <h1 className='p-4 dark:text-white'>Date : <span className='text-gray-500'>{frontmatter.date}</span></h1>
               </div>
             </a>
           </Link>

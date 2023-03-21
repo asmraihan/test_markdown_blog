@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Layout({ children }) {
   return (
-    <div className='flex flex-col min-h-screen'>
+    <div className='flex flex-col min-h-screen bg-white dark:bg-[#061019]'>
       <header className='bg-gray-900 mb-8 py-4'>
         <div className='container mx-auto flex justify-between items-center text-white'>
           <Link href='/'>
@@ -17,6 +17,8 @@ export default function Layout({ children }) {
           </div>
         </div>
       </header>
+      {/* <main className='container mx-auto bg-[#0D1117]'>{children}</main> */}
+      {/* <main className='container mx-auto bg-[#061019]'>{children}</main> */}
       <main className='container mx-auto'>{children}</main>
       <footer className='bg-gray-900 mt-8 py-4'>
         <div className='container mx-auto flex justify-center text-white'>
