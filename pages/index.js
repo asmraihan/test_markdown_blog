@@ -34,6 +34,7 @@ export default function Home({ posts }) {
 }
 sortDate(posts)
 
+
   return (
     // <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
     <div className='container lg:w-3/4 mx-auto'>
@@ -54,6 +55,7 @@ sortDate(posts)
               />
               
               </div>
+              
               <div className='flex flex-col justify-between lg:pt-5'>
               <h1 className='p-4 font-semibold text-xl text-violet-600'>{frontmatter.title}</h1>
               <h1 className='px-4 lg:p-4 text-lg dark:text-white'>{frontmatter.metaDesc}</h1>
@@ -68,7 +70,7 @@ sortDate(posts)
 }
 
 
-// dark mode
+// // dark mode
 
 // export async function Toggle(){
 //    let html = document.getElementById('html')
@@ -80,13 +82,3 @@ sortDate(posts)
 // }
 // Toggle()
 
-// dark v2
-export async function Toggle(){
-   let html = document.getElementById('html')
-   let btn = document.getElementById('btn-theme')
-
-   btn.addEventListener('click', async () => {
-    html.classList.toggle('dark');
-  });
-}
-Toggle()
