@@ -32,15 +32,3 @@ export default function Layout({ children }) {
     </div>
   );
 }
-
-// dark mode
-
-export async function Toggle(){
-  let html = document.getElementById('html')
-  let btn = document.getElementById('btn-theme')
-
-  btn.addEventListener('click', () => {
-   html.classList.toggle('dark');
- });
-}
-Toggle()

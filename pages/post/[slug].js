@@ -28,6 +28,8 @@ export async function getStaticProps({ params: { slug }}) {
     }
 }
 
+
+
 export default function PostPage({ frontmatter, content }) {
     return (
         <div className='prose dark:prose-invert px-5 lg:px-0 lg:max-w-3xl mx-auto'>

@@ -71,14 +71,28 @@ sortDate(posts)
 
 
 // // dark mode
-
 // export async function Toggle(){
-//    let html = document.getElementById('html')
-//    let btn = document.getElementById('btn-theme')
+//   var html = document.getElementById('html')
+//   var btn = document.getElementById('btn-theme')
 
-//    btn.addEventListener('click', () => {
-//     html.classList.toggle('dark');
-//   });
+//   btn.addEventListener('click', async () => {
+//    html.classList.toggle('dark');
+//  });
 // }
 // Toggle()
+
+// dark mode react
+export async function Toggle(){
+  if (typeof window !== "undefined") {
+    var html = document.getElementById('html')
+    var btn = document.getElementById('btn-theme')
+  
+    btn.addEventListener('click', async () => {
+     html.classList.toggle('dark');
+   });
+  }
+  
+}
+Toggle()
+
 
