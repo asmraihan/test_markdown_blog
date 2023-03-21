@@ -68,7 +68,7 @@ sortDate(posts)
 }
 
 
-// dark mode
+// dark mode done
 
 export async function Toggle(){
    let html = document.getElementById('html')
