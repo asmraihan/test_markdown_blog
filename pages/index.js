@@ -81,18 +81,31 @@ sortDate(posts)
 // }
 // Toggle()
 
-// dark mode react
-export async function Toggle(){
+
+
+// dark mode react v2
+
   if (typeof window !== "undefined") {
     var html = document.getElementById('html')
     var btn = document.getElementById('btn-theme')
-  
+    
+    if(localStorage.getItem("theme") == 'white'){
+      console.log(' sadsdsa')
+      html.classList.toggle('dark');
+      // localStorage.setItem("theme", "dark");
+    }
+    
     btn.addEventListener('click', async () => {
-     html.classList.toggle('dark');
+      if(localStorage.getItem("theme") == 'dark'){
+        localStorage.setItem("theme", "white");
+        html.classList.toggle('dark');
+      }else{
+        localStorage.setItem("theme", "dark");
+        html.classList.toggle('dark');
+      }
    });
   }
   
-}
-Toggle()
+
 
 
