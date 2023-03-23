@@ -90,7 +90,7 @@ sortDate(posts)
     var btn = document.getElementById('btn-theme')
     
     if(localStorage.getItem("theme") == 'white'){
-      console.log(' sadsdsa')
+      // console.log(' sadsdsa')
       html.classList.toggle('dark');
       // localStorage.setItem("theme", "dark");
     }

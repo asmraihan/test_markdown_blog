@@ -1,7 +1,8 @@
 ---
 title: "Most used VSCode Shortcuts"
+metaDesc: 'List of helpful shortcuts for faster coding '
 subtitle: "List of helpful shortcuts for faster coding."
-socialImage: https://res.cloudinary.com/practicaldev/image/fetch/s--3cvHUNto--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/jm9zef4hx9rigk608gzi.jpg
+socialImage: images/port_5.jpg
 date: "2023-03-23"
 ---
 
@@ -11,7 +12,7 @@ date: "2023-03-23"
 
 >> List of helpful shortcuts for faster coding
 
-```bash
+```bash 
 Windows
 
 Mac
