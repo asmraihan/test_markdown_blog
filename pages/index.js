@@ -47,7 +47,8 @@ sortDate(posts)
             <a className='lg:flex justify-start'>
               <div className='lg:w-1/2'>
               <Image className='object-cover'
-                // objectFit="cover"
+              // give full height and width
+                layout='responsive'
                 width={650}
                 height={340}
                 alt={frontmatter.title}
@@ -56,10 +57,10 @@ sortDate(posts)
               
               </div>
               
-              <div className='flex flex-col justify-between lg:pt-5'>
+              <div className='flex flex-col justify-between lg:pt-5 lg:w-1/2'>
               <h1 className='p-4 font-semibold text-xl text-[#DA0060]'>{frontmatter.title}</h1>
-              <h1 className='px-4 lg:p-4 text-lg dark:text-white'>{frontmatter.metaDesc}</h1>
-              <h1 className='p-4 dark:text-white'>Date : <span className='text-gray-500'>{frontmatter.date}</span></h1>
+              <h1 className='px-4 lg:p-4 text-md text-slate-700 font-semibold dark:text-white'>{frontmatter.metaDesc}</h1>
+              <h1 className='p-4 dark:text-white font-semibold'>Date : <span className='text-gray-500'>{frontmatter.date}</span></h1>
               </div>
             </a>
           </Link>
@@ -90,9 +91,7 @@ sortDate(posts)
     var btn = document.getElementById('btn-theme')
     
     if(localStorage.getItem("theme") == 'white'){
-      // console.log(' sadsdsa')
       html.classList.toggle('dark');
-      // localStorage.setItem("theme", "dark");
     }
     
     btn.addEventListener('click', async () => {
@@ -105,7 +104,3 @@ sortDate(posts)
       }
    });
   }
-  
-
-
-

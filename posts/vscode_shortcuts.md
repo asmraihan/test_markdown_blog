@@ -1,6 +1,6 @@
 ---
 title: "Most used VSCode Shortcuts"
-metaDesc: 'List of helpful shortcuts for faster coding '
+metaDesc: 'List of helpful shortcuts for faster coding  But the application that really excited me was creative writing (stuff like SEO generation is cool and all, but a also a bit dry for my taste).'
 subtitle: "List of helpful shortcuts for faster coding."
 socialImage: images/port_5.jpg
 date: "2023-03-23"
