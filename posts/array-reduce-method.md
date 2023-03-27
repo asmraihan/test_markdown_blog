@@ -1,7 +1,7 @@
 ---
 title: "JS Array Reduce method"
 subtitle: "Using reduce method to add numbers in an array of object"
-socialImage: images/array-reduce-method.png
+socialImage: images/array-reduce-method1.png
 date: "2023-03-23"
 ---
 

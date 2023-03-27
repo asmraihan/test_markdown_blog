@@ -2,7 +2,7 @@
 title: "Using AI to generate poetry"
 metaDesc: 'I decided to test it against poetry and story generation.'
 subtitle: "I used GPT-3 to generate poetry and other creative content."
-socialImage: images/port_3.jpg
+socialImage: images/chatgpt1.png
 date: "2023-02-27"
 ---
 
